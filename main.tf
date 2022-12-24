@@ -1,4 +1,4 @@
-resource "aws_vpc" "my_vpc" {
+resource "aws_vpc" "my_vpc1" {
   cidr_block = "172.16.0.0/16"
 
   tags = {
