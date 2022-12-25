@@ -120,7 +120,7 @@ output "server_public_ip" {
 # # 9. Create Ubuntu server
 resource "aws_instance" "web-server-instance" {
   ami               = "ami-0b5eea76982371e91" # Ubuntu 18.04
-  instance_type     = "t2.micro"
+  instance_type     =  var.instance_type
   availability_zone = "us-east-1a"
   key_name          = "main-key"
 
